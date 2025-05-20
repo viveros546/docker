@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Pipes and Filters - Unicomfacauca</title>
     
+    
     <!-- Enlace al CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
@@ -12,6 +13,7 @@
     <div class="container">
         <h1>Arquitectura de software</h1>
         <h2>Ingeniería de Sistemas - Unicomfacauca</h2>
+        <h3>Camilo Victoria y Sebastian Paja</h3>
 
         <form method="POST">
             <label for="texto">Ingresa el texto a procesar:</label>
@@ -42,6 +44,8 @@
         {% endif %}
     </div>
     <div id="pipelineData" data-json='{{ resultados | default({}) | tojson | safe }}'></div>
+
+    
   
 
     
