@@ -1,0 +1,5 @@
+{
+  "name": "Dockerized Flask App",
+  "dockerFile": "Dockerfile",
+  "appPort": [5000]
+}
